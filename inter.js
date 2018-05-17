@@ -1,10 +1,10 @@
 
-var sport=document.getElementById('sports').getElementByTag('option');
-var col=document.getElementById('college');
-for(var i=0;i< sport.length();i++){
-	sport[i].addEventListener("click",toggle);
-}
-alert("abc");
-function toggle() {
-	alert("abc");
-}
+$(document).on('change', '.div-toggle', function() {
+  var target = $(this).data('target');
+  var show = $("option:selected", this).data('show');
+  $(target).children().addClass('hide');
+  $(show).removeClass('hide');
+});
+$(document).ready(function(){
+    $('.div-toggle').trigger('change');
+});

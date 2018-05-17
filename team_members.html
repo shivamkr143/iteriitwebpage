@@ -51,21 +51,32 @@
    <h2 align="center">Team Details</h2>
 </div>
 	
+	
+
+
+
+
+
 	<div class="row">
 	<div class="col-md-6 col-lg-6">
 		<h4>Sports</h4>
 	<div class="form-group">
  
-	    <select class="form-control" id="sports" required>
+	    <select class="form-control div-toggle" data-target=".my-info-1" id="sports"   required>
 				<option Selected disabled >Choose sports...</option>
-				<option>Badminton</option>
-				<option>Cricket</option>
-				<option>Football</option>
-				<option>Table Tennis</option>
-				<option>Hockey</option>
+				
+				<option value="Badminton" data-show=".badminton" >Badminton</option>
+				<option value="Cricket" data-show=".cricket" >Cricket</option>
+				<option value="Football" data-show=".football">Football</option>
+				<option value="tt" data-show=".tt">Table Tennis</option>
+				<option value="Hockey" data-show=".hockey">Hockey</option>
 	    </select>
   	</div>	
  	</div>
+
+
+
+
 
 	
 	<div  class="col-md-6 col-lg-6">
@@ -87,49 +98,68 @@
 	</div>	
 	
 	</div>
-<a id="but">	submit</a>
+
 
 	<div align="center">
 		<h3>Team Members</h3>
 		<div>
-			<ul id="iitbbadminton">
-				<li>iitbbadmem1</li>
-				<li>iitbbadmem2</li>
-				<li>iitbbadmem3</li>
-				<li>iitbbadmem4</li>
-				<li>iitbbadmem5</li>
-				<li>iitbbadmem6</li>
+			<div class="my-info-1">
+			<ul  class="badminton hide " id="iitbbadminton">
+				<li>badmintonp1</li>
+				<li>badmintonp2</li>
+				<li>badmintonp3</li>
+				<li>badmintonp4</li>
+				<li>badmintonp5</li>
+				<li>badmintonp6</li>
 			</ul>
+			</div>
 
-			<ul id="iitgbadminton">
-				<li>iitgbadmem1</li>
-				<li>iitgbadmem2</li>
-				<li>iitgbadmem3</li>
-				<li>iitgbadmem4</li>
-				<li>iitgbadmem5</li>
-				<li>iitgbadmem6</li>
+			<div class="my-info-1">
+			<ul  class="cricket hide" id="iitgbadminton">
+				<li>cricketplayer1</li>
+				<li>cricketplayer2</li>
+				<li>cricketplayer3</li>
+				<li>cricketplayer4</li>
+				<li>cricketplayer5</li>
+				<li>cricketplayer6</li>
 			</ul>
+			</div>
 
-			<ul id="iitbcricket">
-				<li>iitbcrickmem1</li>
-				<li>iitbcrickmem2</li>
-				<li>iitbcrickmem3</li>
-				<li>iitbcrickmem4</li>
-				<li>iitbcrickmem5</li>
-				<li>iitbcrickmem6</li>
+			<div class="my-info-1">
+			<ul class="tt hide" id="iitbcricket">
+				<li>ttp1</li>
+				<li>ttp2</li>
+				<li>ttp3</li>
+				<li>ttp4</li>
+				<li>ttp5</li>
+				<li>ttp6</li>
 			</ul>
+			</div>
 
-			<ul id="iitgcricket">
-				<li>iitgcrickmem1</li>
-				<li>iitgcrickmem2</li>
-				<li>iitgcrickmem3</li>
-				<li>iitgcrickmem4</li>
-				<li>iitgcrickmem5</li>
-				<li>iitgcrickmem6</li>
+			<div class="my-info-1">
+			<ul class="hockey" id="iitgcricket">
+				<li>hockeyp1</li>
+				<li>hockeyp2</li>
+				<li>hockeyp3</li>
+				<li>hockeyp4</li>
+				<li>hockeyp5</li>
+				<li>hockeyp6</li>
 			</ul>
+			</div>
 
+			<div class="my-info-1">
+			<ul class="football" id="iitgcricket">
+				<li>football1</li>
+				<li>football2</li>
+				<li>football3</li>
+				<li>football4</li>
+				<li>football5</li>
+				<li>football6</li>
+			</ul>
+			</div>
 		</div>
 	</div>
+
 <script type="text/javascript" src="inter.js"></script>
 
  
