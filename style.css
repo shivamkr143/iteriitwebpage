@@ -76,6 +76,14 @@ table, th, td {
   border: solid;
 
 }
+#cricket img{
+  max-width:300px ;
+  border: solid;
+}
+#football img{
+    max-width:300px ;
+  border: solid;
+}
 .row div{
   margin-top: 30px;
   margin-bottom: 30px;
