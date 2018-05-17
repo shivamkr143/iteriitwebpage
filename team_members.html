@@ -3,11 +3,13 @@
 <head>
 	<title>Team</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
 	<link rel="stylesheet" type="text/css" href="assign.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
@@ -24,21 +26,17 @@
 		  <div class="collapse navbar-collapse" id="navbarNavDropdown" >
 		    <ul class="navbar-nav">
 		      <li class="nav-item active">
-		        <a class="nav-link"  id="home_button" href="#">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link"  id="home_button" href="index.html">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <!-- <li class="nav-item">
 		        <a class="nav-link" href="#content">About</a>
 		      </li> -->
 			    
 		      <li class="nav-item">
-		        <a class="nav-link"   href="#skill">Image Gallery</a>
+		        <a class="nav-link"   href="image_gallery.html">Image Gallery</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link"  id="projects_button" href="#projects">Projects</a>
-		      </li>
-
-		      <li class="nav-item">
-		        <a class="nav-link" id="resume_button" href="#Resume">Resume</a>
+		        <a class="nav-link" id="resume_button" href="team_members.html">Team Members</a>
 		      </li>
 		    </ul>
   		   </div>
@@ -49,17 +47,90 @@
 	</nav>
 </div>
 
-
 <div style="padding-top: 100px;">
    <h2 align="center">Team Details</h2>
 </div>
-<table>
-	<tr>
-		<th>Spots</th>
-		<th>College</th>
+	
+	<div class="row">
+	<div class="col-md-6 col-lg-6">
+		<h4>Sports</h4>
+	<div class="form-group">
+ 
+	    <select class="form-control" id="sports" required>
+				<option Selected disabled >Choose sports...</option>
+				<option>Badminton</option>
+				<option>Cricket</option>
+				<option>Football</option>
+				<option>Table Tennis</option>
+				<option>Hockey</option>
+	    </select>
+  	</div>	
+ 	</div>
+
+	
+	<div  class="col-md-6 col-lg-6">
+		<h4>College</h4>
+		<div class="form-group">
+ 
+	    <select class="form-control" name="a" id="college" required>
+				<option Selected disabled >Choose college...</option>
+				<option>IITB</option>
+				<option>IITD</option>
+				<option>IITM</option>
+				<option>IITR</option>
+				<option>IITK</option>
+				<option>IITG</option>
+
 				
-	</tr>
-</table>
+	    </select>
+  		</div>	
+	</div>	
+	
+	</div>
+<a id="but">	submit</a>
+
+	<div align="center">
+		<h3>Team Members</h3>
+		<div>
+			<ul id="iitbbadminton">
+				<li>iitbbadmem1</li>
+				<li>iitbbadmem2</li>
+				<li>iitbbadmem3</li>
+				<li>iitbbadmem4</li>
+				<li>iitbbadmem5</li>
+				<li>iitbbadmem6</li>
+			</ul>
+
+			<ul id="iitgbadminton">
+				<li>iitgbadmem1</li>
+				<li>iitgbadmem2</li>
+				<li>iitgbadmem3</li>
+				<li>iitgbadmem4</li>
+				<li>iitgbadmem5</li>
+				<li>iitgbadmem6</li>
+			</ul>
+
+			<ul id="iitbcricket">
+				<li>iitbcrickmem1</li>
+				<li>iitbcrickmem2</li>
+				<li>iitbcrickmem3</li>
+				<li>iitbcrickmem4</li>
+				<li>iitbcrickmem5</li>
+				<li>iitbcrickmem6</li>
+			</ul>
+
+			<ul id="iitgcricket">
+				<li>iitgcrickmem1</li>
+				<li>iitgcrickmem2</li>
+				<li>iitgcrickmem3</li>
+				<li>iitgcrickmem4</li>
+				<li>iitgcrickmem5</li>
+				<li>iitgcrickmem6</li>
+			</ul>
+
+		</div>
+	</div>
+<script type="text/javascript" src="inter.js"></script>
 
  
 </body>
